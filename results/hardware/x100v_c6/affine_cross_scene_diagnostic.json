@@ -1,0 +1,39 @@
+{
+  "kind": "x100v-c6-cross-scene-affine-diagnostic-v1",
+  "fit_scene": "DSCF4355 cube",
+  "held_out_scene": "DSCF4360 plant",
+  "raw_transform_space": "display-linear RGB with affine bias",
+  "fit_scene_error": {
+    "mean": 2.8263656394935004,
+    "median": 2.933750491013752,
+    "p95": 5.09873931439797
+  },
+  "held_out_scene_error": {
+    "mean": 3.8852716341308593,
+    "median": 3.076811468973858,
+    "p95": 9.768710061313806
+  },
+  "interpretation": "Diagnostic only. A cross-scene affine fit is not a Fujifilm custom-setting recipe and does not establish camera readiness.",
+  "coefficient_matrix": [
+    [
+      0.2962305202025797,
+      -0.006111515890831814,
+      -0.0047802790022432136
+    ],
+    [
+      0.22016462439234358,
+      0.2422393610563598,
+      -0.01313605103145181
+    ],
+    [
+      -0.04679243642404175,
+      0.17117644521375397,
+      0.2748924936594937
+    ],
+    [
+      -0.001996644401150126,
+      0.0017009325123985158,
+      0.0048645839706895535
+    ]
+  ]
+}

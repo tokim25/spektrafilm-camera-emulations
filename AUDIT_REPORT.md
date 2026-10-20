@@ -217,22 +217,30 @@ adapter still requires hardware/firmware testing.
 
 ## Repository/PR status
 
-Since the initial audit, probe-kit manifest generation was corrected to store
-paths relative to the kit root. Two independently generated kits now have
-identical manifests across different output directories, and the checked-in
-kit was regenerated with the corrected format. This fixes reproducibility of
-the diagnostic artifacts only; it does not create camera measurements.
+The public repository is [tokim25/spektrafilm-camera-emulations](https://github.com/tokim25/spektrafilm-camera-emulations).
+It contains the source, tests, CI, attribution, audit documentation, and
+anonymized numeric diagnostic reports. Personal camera images and proprietary
+backup files remain local. GitHub CI verifies the test and reference-install
+jobs; the current local result is 51 passed.
 
-No commit or pull request was created: the supplied directory contains no
-`.git` directory or remote configuration, and no authorized GitHub connector
-was available in this audit context. This report is therefore an uncommitted
-local audit artifact until the project is restored as a Git repository.
-
-The local GitHub CLI was checked again during continuation: account `tokim25`
-is configured, but its token is invalid and requires interactive
-`gh auth login`. Repository creation/publication therefore remains externally
-blocked; no remote mutation was attempted.
+Phase 1 remains an experimental development release. No pull request is
+appropriate yet because the release gates are still open; the remaining work
+is tracked in [issue #1](https://github.com/tokim25/spektrafilm-camera-emulations/issues/1).
 
 Sources checked: [SpektraFilm](https://github.com/andreavolpato/spektrafilm),
 [SpektraFilm license](https://github.com/andreavolpato/spektrafilm/blob/main/SPEKTRAFILM_LICENSE.txt),
 and [the Nikon NP3 reader/writer reference](https://github.com/ssssota/nikon-flexible-color-picture-control).
+
+## Continuation evidence — physical X100V C6
+
+The physical X100V supplied ten C6 RAF/JPEG pairs. The repeated cube scene
+(`DSCF4355`) measured mean/median/p95 ΔE00 5.34/4.77/10.39 after exposure-only
+search; the held-out plant scene (`DSCF4360`) measured 5.75/5.38/10.92. A
+global affine transform fitted on the cube scored 2.83 on that scene and 3.89
+on the held-out plant scene (p95 9.77). This supports further measured fitting,
+but the transform is not a Fuji custom-setting recipe and does not establish
+camera readiness.
+
+The project now has a public GitHub repository and passing CI. The local
+camera RAWs, JPEGs, and proprietary backup files remain private and are not
+part of the public repository.
