@@ -1,0 +1,20 @@
+FUJIFILM X100V CUSTOM SETTINGS - EXPERIMENTAL C6 DIAGNOSTIC
+Name: PORTRA160 COLOR PROBE C6
+Film simulation: PROVIA
+Dynamic Range: DR100
+D RANGE PRIORITY: OFF
+White balance: DAYLIGHT, Red -2, Blue +2
+Tone curve highlight: +0
+Tone curve shadow: +0
+Color: -2
+Sharpness: +0
+Noise reduction: +0
+Clarity: +0
+Grain roughness: OFF
+Grain size: SMALL
+Color Chrome Effect: OFF
+Color Chrome FX Blue: OFF
+Minimum required ISO: 160
+Status: experimental; not validated as a Portra 160 camera emulation.
+Source: SpektraFilm kodak_portra_160 + kodak_portra_endura
+Not from Fuji X Weekly or another community recipe.

@@ -14,3 +14,8 @@ portra160-lab render-matrix --input scene_linear.npy --out-dir results/matrix --
 The manifest explicitly records that no camera recipe or hardware validation
 was generated. Phase 3 still needs measured camera outputs before any fitting
 or export can be called a camera emulation.
+
+The X100V experimental Portra 160 diagnostic is distributed as a plain-text
+manual settings sheet in `recipes/x100v/`; see `X100V_INSTALL.md`. GitHub
+cannot write a custom bank to the camera, and no Phase 2 stock has a measured
+X100V recipe.
