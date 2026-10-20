@@ -86,10 +86,11 @@ prove a camera-native Portra fit.
 ### Physical X100V evidence added after the initial audit
 
 The camera was connected in USB Backup/Restore mode. Two full backups were
-made; their SHA-256 hashes differ, confirming a state change after the user
-entered the experimental C6 values manually. The original backup remains
-available for restoration. Image Capture then downloaded physical RAF/JPEG
-pairs. The C6 cube repeat (`DSCF4355`) measured mean/median/p95 ΔE00
+made; their SHA-256 hashes differ, and a byte-level comparison found 15 changed
+bytes. The diff includes the changed custom-name text and opaque/check bytes;
+it does **not** prove that tone or color controls changed. The original backup
+remains available for restoration. Image Capture then downloaded physical
+RAF/JPEG pairs. The C6 cube repeat (`DSCF4355`) measured mean/median/p95 ΔE00
 5.34/4.77/10.39; the held-out plant scene (`DSCF4360`) measured
 5.75/5.38/10.92. These reports use a provisional LibRaw camera-matrix input,
 downsampled color render, and an exposure-only search; they are diagnostics,
