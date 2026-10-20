@@ -22,6 +22,7 @@ def phase1_status(workspace: Path) -> dict[str, Any]:
     kit_file=workspace/'build'/'portra160_camera_probes'/'manifest.json'
     fuji_backup=workspace/'results'/'hardware'/'x100v_backup_manifest.json'
     fuji_diagnostic=workspace/'results'/'hardware'/'x100v_c5'/'DSCF4330_comparison_report.json'
+    fuji_held_out=workspace/'results'/'hardware'/'x100v_c6'/'DSCF4360_comparison_report.json'
     camera_files={
       'nikon_zf': workspace/'results'/'zf_portra160_measured_candidate.json',
       'fujifilm_x100v': workspace/'results'/'x100v_portra160_measured_candidate.json',
@@ -34,6 +35,7 @@ def phase1_status(workspace: Path) -> dict[str, Any]:
        'camera_probe_manifest_exists': kit_file.is_file(),
        'fujifilm_read_only_backup_manifest_exists': fuji_backup.is_file(),
        'fujifilm_single_scene_diagnostic_exists': fuji_diagnostic.is_file(),
+       'fujifilm_held_out_diagnostic_exists': fuji_held_out.is_file(),
        'nikon_measured_candidate_report_exists': camera_files['nikon_zf'].is_file(),
        'fujifilm_measured_candidate_report_exists': camera_files['fujifilm_x100v'].is_file(),
        'nikon_actual_camera_acceptance_confirmed': False,
@@ -60,5 +62,5 @@ def phase1_status(workspace: Path) -> dict[str, Any]:
       'gates':gates,
       'source_stock':stock['film'],
       'source_print':stock['print'],
-      'note':'Phase1 readout intentionally never grants hardware verification based solely on files. An X100V read-only backup is recorded, but no custom-setting write, property-level readback, image-quality validation, or Nikon hardware test has been completed.',
+      'note':'Phase1 readout intentionally never grants hardware verification based solely on files. An X100V read-only backup and held-out diagnostic are recorded, but no custom-setting write, property-level readback, measured chart calibration, image-quality acceptance, or Nikon hardware test has been completed.',
     }
