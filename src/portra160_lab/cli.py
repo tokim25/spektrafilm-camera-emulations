@@ -14,6 +14,7 @@ from .raw_pipeline import prepare_raw
 from .phase1 import phase1_status
 from .compare import compare_scene
 from .workflow import render_raw
+from .matrix import render_matrix
 
 
 def main(argv=None):
@@ -76,6 +77,10 @@ def main(argv=None):
     p.add_argument('--reference',required=True,type=Path)
     p.add_argument('--candidates',required=True,nargs='+',type=Path)
     p.add_argument('--out',required=True,type=Path)
+    p=sp.add_parser('render-matrix',help='Render all or selected upstream film/print references')
+    p.add_argument('--input',required=True,type=Path)
+    p.add_argument('--out-dir',required=True,type=Path)
+    p.add_argument('--stocks',nargs='*',default=None)
     args=ap.parse_args(argv)
     if args.action=='render-raw':
         print(json.dumps(render_raw(args.input,args.out,stock=args.stock,mode=args.mode,white_balance=args.white_balance,demosaic=args.demosaic,permit_clipping=args.permit_clipping),indent=2));return 0
@@ -98,6 +103,8 @@ def main(argv=None):
         return 0
     if args.action=='list-stocks':
         print(json.dumps(all_stocks(),indent=2));return 0
+    if args.action=='render-matrix':
+        print(json.dumps(render_matrix(args.input,args.out_dir,stocks=args.stocks),indent=2));return 0
     if args.action=='zf-export':
         result=export_nikon(args.settings,args.out,experimental=args.experimental)
         print(json.dumps(result,indent=2));return 0
