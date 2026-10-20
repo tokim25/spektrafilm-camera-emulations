@@ -1,0 +1,100 @@
+{
+  "schema": "spektrafilm-camera-stock-catalog-v1",
+  "source": "https://github.com/andreavolpato/spektrafilm",
+  "source_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "source_profile_license": "CC BY-SA 4.0; attribution Andrea Volpato",
+  "profiles": {
+    "portra160": {
+      "name": "Kodak Portra 160",
+      "status": "upstream_profile_available",
+      "film": "kodak_portra_160",
+      "print": "kodak_portra_endura",
+      "notes": "Active first calibration target; not yet measured on either camera"
+    },
+    "portra400": {
+      "name": "Kodak Portra 400",
+      "status": "upstream_profile_available",
+      "film": "kodak_portra_400",
+      "print": "kodak_portra_endura",
+      "notes": "Queue after validated Portra 160"
+    },
+    "vision3_250d": {
+      "name": "Kodak VISION3 250D",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_250d",
+      "print": "kodak_2383",
+      "notes": "Cinematic print stock Kodak 2383 is specified by the upstream film profile; review this creative choice before calibration"
+    },
+    "ektar100": {
+      "name": "Kodak Ektar 100",
+      "status": "upstream_profile_available",
+      "film": "kodak_ektar_100",
+      "print": "kodak_portra_endura",
+      "notes": "User-prioritized after first calibration. Actual reference pairing per upstream Kodak Ektar profile."
+    },
+    "portra800": {
+      "name": "Kodak Portra 800",
+      "status": "upstream_profile_available",
+      "film": "kodak_portra_800",
+      "print": "kodak_portra_endura",
+      "notes": "User-prioritized. Do not conflate standard Portra 800 with push +1/+2 variants."
+    },
+    "vision3_50d": {
+      "name": "Kodak VISION3 50D",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_50d",
+      "print": "kodak_2383",
+      "notes": "User-prioritized. Kodak 2383 is upstream default print film."
+    },
+    "vision3_500t": {
+      "name": "Kodak VISION3 500T",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_500t",
+      "print": "kodak_2383",
+      "notes": "User-prioritized. Tungsten lighting reference needs care; Kodak 2383 is upstream default print film."
+    },
+    "vision3_250d_2393": {
+      "name": "Kodak VISION3 250D + Vision Premier 2393",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_250d",
+      "print": "kodak_2393",
+      "notes": "This is an ALTERNATIVE print-film pairing, not a 2393 camera negative."
+    },
+    "vision3_50d_2393": {
+      "name": "Kodak VISION3 50D + Vision Premier 2393",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_50d",
+      "print": "kodak_2393",
+      "notes": "Experimental alternate print pairing. Must be rendered/verified against upstream pipeline."
+    },
+    "vision3_500t_2393": {
+      "name": "Kodak VISION3 500T + Vision Premier 2393",
+      "status": "upstream_profile_available",
+      "film": "kodak_vision3_500t",
+      "print": "kodak_2393",
+      "notes": "Experimental alternate print pairing. Must be rendered/verified against upstream pipeline."
+    },
+    "ektachrome400": {
+      "name": "Kodak Ektachrome 400",
+      "status": "upstream_profile_missing",
+      "film": null,
+      "print": null,
+      "notes": "SpektraFilm supplies Ektachrome 100, NOT Ektachrome 400. Historical Ektachrome 400X (E-161) exists but must not be silently selected as a specific 400 stock/version; source sensitometric data first, then implement and validate actual 400 reversal profile. Do not substitute E100."
+    },
+    "trix400": {
+      "name": "Kodak Tri-X 400",
+      "status": "upstream_profile_missing",
+      "film": null,
+      "print": null,
+      "notes": "Requires Kodak Tri-X 400 negative measured model and monochrome print/scanner pipeline; not Kodak Tri-X reversal 7266. Do not simulate by renaming a monochrome preset."
+    },
+    "aerocolor_iv": {
+      "name": "Kodak AeroColor IV 2460",
+      "status": "upstream_profile_missing",
+      "film": null,
+      "print": null,
+      "notes": "Kodak AS-2652 PDF contains spectral sensitivity, spectral dye density, and contrast curves; AeroColor IV is unmasked aerial negative with process-dependent behavior. Must digitize and validate profile prior to rendering.",
+      "technical_datasheet": "https://analogfilm.space/assets/kodak-aerocolor-iv.BtIv7UQJ.pdf"
+    }
+  }
+}

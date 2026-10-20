@@ -1,0 +1,19 @@
+{
+  "name": "LAB NEUTRAL",
+  "validated_on_camera": false,
+  "film_simulation": "PROVIA",
+  "dynamic_range": 100,
+  "dr_priority": "OFF",
+  "highlight": 0,
+  "shadow": 0,
+  "color": 0,
+  "sharpness": 0,
+  "noise_reduction": 0,
+  "clarity": 0,
+  "grain_roughness": "OFF",
+  "grain_size": "SMALL",
+  "color_chrome": "OFF",
+  "color_chrome_blue": "OFF",
+  "white_balance": {"mode":"DAYLIGHT","red":0,"blue":0},
+  "iso": 160
+}

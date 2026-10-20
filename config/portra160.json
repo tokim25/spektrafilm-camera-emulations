@@ -1,0 +1,14 @@
+{
+  "id": "portra160_endura_v1",
+  "film": "kodak_portra_160",
+  "print": "kodak_portra_endura",
+  "film_reference_illuminant": "D55",
+  "film_viewing_illuminant": "D50",
+  "spektrafilm_source": "https://github.com/andreavolpato/spektrafilm",
+  "spektrafilm_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "spektrafilm_license": "GPL-3.0",
+  "source_profile_license": "CC BY-SA 4.0",
+  "inputs": {"color_space": "ProPhoto RGB", "encoding": "scene-linear", "file_format": "npy HxWx3 float"},
+  "outputs": {"color_space": "sRGB", "encoding": "display-encoded", "file_format": "npy HxWx3 float"},
+  "targets": ["Nikon Zf flexible color .NP3", "Fujifilm X100V custom C1-C7"]
+}

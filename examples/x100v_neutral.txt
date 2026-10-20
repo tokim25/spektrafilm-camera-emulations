@@ -1,0 +1,19 @@
+FUJIFILM X100V CUSTOM SETTINGS - UNVERIFIED CALIBRATION CANDIDATE
+Name: LAB NEUTRAL
+Film simulation: PROVIA
+Dynamic Range: DR100
+D RANGE PRIORITY: OFF
+White balance: DAYLIGHT, Red +0, Blue +0
+Tone curve highlight: +0
+Tone curve shadow: +0
+Color: +0
+Sharpness: +0
+Noise reduction: +0
+Clarity: +0
+Grain roughness: OFF
+Grain size: SMALL
+Color Chrome Effect: OFF
+Color Chrome FX Blue: OFF
+Minimum required ISO: 160
+Not from Fuji X Weekly. No measured SpektraFilm fidelity is claimed.
+Menu: IMAGE QUALITY SETTING > EDIT/SAVE CUSTOM SETTING > Choose bank > EDIT.

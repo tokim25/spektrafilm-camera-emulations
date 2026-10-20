@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+data/raw/
+data/*
+!data/sources/
+data/sources/*
+!data/sources/online_samples.json
+measurements/
+results/
+.DS_Store

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portra160-camera-lab"
+version = "0.1.0"
+description = "Measured Portra 160 camera-native look fitting for Nikon Zf and Fujifilm X100V"
+requires-python = ">=3.13"
+license = {text = "GPL-3.0-only"}
+dependencies = ["numpy>=2.3,<3", "Pillow>=11,<14"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+raw = ["rawpy>=0.25,<0.28"]
+reference = [
+  "spektrafilm @ git+https://github.com/andreavolpato/spektrafilm.git@3bb2c2d2801ff68b92019cf1dbcbb133d60832bc"
+]
+
+[project.scripts]
+portra160-lab = "portra160_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

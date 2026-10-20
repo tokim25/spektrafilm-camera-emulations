@@ -1,0 +1,8 @@
+{
+  "patches": [
+    {"id":"neutral-mid","category":"neutral","box":[5,5,35,35]},
+    {"id":"skin-swatch","category":"skin","box":[45,5,75,35]},
+    {"id":"highlight","category":"highlight","box":[85,5,115,35]},
+    {"id":"shadow","category":"shadow","box":[125,5,155,35]}
+  ]
+}

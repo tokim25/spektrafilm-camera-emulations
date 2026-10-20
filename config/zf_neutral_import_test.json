@@ -1,0 +1,16 @@
+{
+  "name": "LABNEUTRALTEST",
+  "comment": "Experimental NP3 format test only. NOT a film emulation. No camera measurements have been made.",
+  "validated_on_camera": false,
+  "sharpning": 2,
+  "midRangeSharpning": 1,
+  "clarity": 0.5,
+  "contrast": 0,
+  "highlights": 0,
+  "shadows": 0,
+  "whiteLevel": 0,
+  "blackLevel": 0,
+  "saturation": 0,
+  "colorBlender": {},
+  "colorGrading": {}
+}
