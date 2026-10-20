@@ -4,19 +4,21 @@ The goal is Kodak Portra 160 on Nikon Zf and Fujifilm X100V, measured
 against Andrea Volpato's SpektraFilm (not Fuji X Weekly or another recipe).
 
 WHAT IS READY:
-- Software test suite (48 tests passed in this environment)
+- Software test suite (51 tests passed locally; CI also passes)
 - Native Nikon NP3 file-format diagnostic tests; Fujifilm X100V diagnostic settings
 - RAW -> provisional scene-linear ProPhoto converter for .NEF/.RAF
 - SpektraFilm reference wrapper; reproducible one-shot RAW processing command
 - Image comparison, color measurement, camera-response fitting tools
+- Physical X100V C6 RAW/JPEG diagnostics, including one held-out scene
 - Source stock queue includes Portra 400, Vision3 250D, Ektar 100,
   Portra 800, Vision3 50D, Vision3 500T, and Premier 2393 print variants
 
 WHAT IS NOT READY:
-- No actual SpektraFilm Portra 160 camera recipe has been produced.
+- No actual SpektraFilm Portra 160 camera recipe has been validated.
 - No file here is a validated Portra 160 Nikon Picture Control.
 - No Fuji X100V custom bank has been fitted to Portra 160.
-- No camera has been tested and no online camera RAW was processed here.
+- The X100V has been photographed, but its custom-bank properties were not
+  independently read back; Nikon Zf hardware remains untested.
 
 READ README.md for setup and the commands. Check real status:
     python3 -m portra160_lab.cli phase1-status --workspace .

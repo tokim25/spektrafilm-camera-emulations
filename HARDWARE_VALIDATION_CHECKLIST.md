@@ -4,6 +4,16 @@ This checklist is required before Portra 160 can be labelled camera-ready.
 The current software artifacts are experimental and must not overwrite camera
 settings without a backup and an explicitly selected destination.
 
+## Current evidence status (2026-10-20)
+
+- X100V: full backups exist, C5/C6 were selected explicitly, and physical
+  RAF/JPEG diagnostics exist for a repeated cube scene and a held-out plant
+  scene. The proprietary backup diff is only byte-level; property readback and
+  USB custom-bank writing remain unverified.
+- Nikon Zf: NP3 file round-trip has been tested with an independent reader, but
+  physical import, readback, image capture, and restoration remain unverified.
+- Therefore the release is still experimental and not camera-ready.
+
 ## Nikon Zf
 
 1. Record the Zf firmware version and confirm that Nikon NX Studio or the
