@@ -1,0 +1,23 @@
+{
+  "kind": "x100v-portra160-provisional-candidate-v1",
+  "camera": "Fujifilm X100V",
+  "destination": "C6",
+  "status": "provisional-diagnostic-not-camera-ready",
+  "source": "config/x100v_c6_color_probe.json",
+  "settings": {
+    "film_simulation": "PROVIA",
+    "dynamic_range": 100,
+    "highlight": 0,
+    "shadow": 0,
+    "color": -2,
+    "white_balance": {"mode": "DAYLIGHT", "red": -2, "blue": 2},
+    "iso": 160
+  },
+  "same_scene_cube": {"source": "DSCF4355", "mean_deltaE00": 5.339831926943509, "median_deltaE00": 4.765171560569847, "p95_deltaE00": 10.393551182413374},
+  "held_out_plant": {"source": "DSCF4360", "mean_deltaE00": 5.75051687696387, "median_deltaE00": 5.378882992990541, "p95_deltaE00": 10.923999497218785},
+  "property_level_readback": false,
+  "usb_write_verified": false,
+  "camera_color_calibration_complete": false,
+  "held_out_release_validation_complete": false,
+  "warning": "This report records a manually entered diagnostic candidate. It is not a validated Fuji recipe and must not be described as an in-camera Portra 160 emulation."
+}
