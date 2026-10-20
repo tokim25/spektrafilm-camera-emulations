@@ -6,6 +6,11 @@
 
 ## Phase 1 delivery status (October 20, 2026)
 
+Phase 1 is shipped as an experimental software/reference release. Physical
+camera validation is intentionally deferred and is not required for this
+release track. The project does not claim that its NP3 or X100V artifacts are
+camera-ready; those remain a separate future hardware-validation track.
+
 **This is a reproducible calibration developer kit, not a camera-ready Portra 160 preset.**
 The user-defined Phase 1 release gate is stricter than a build passing tests:
 

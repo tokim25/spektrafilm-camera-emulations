@@ -14,7 +14,11 @@ October 20, 2026
   do not by themselves prove camera rendering, film fidelity, or hardware
   acceptance.
 
-## Blocking Phase 1 release
+## Deferred camera-validation track
+
+Hardware import, property-level readback, restoration, and practical image
+quality remain future work. They do not block the experimental software and
+reference release described here. No camera-ready claim is made.
 
 - Public RAW/JPEG samples and the pinned SpektraFilm/rawpy runtime have since been acquired and executed; see the independent verification section below.
 - Camera-rendered real outputs and actual Zf/X100V import acceptance have not been recorded.

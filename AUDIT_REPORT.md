@@ -4,8 +4,9 @@ Audit date: 2026-10-20 (America/Los_Angeles)
 
 ## Executive conclusion
 
-Phase 1 is not shippable as a camera-native Portra 160 emulation. The supplied
-kit is a development scaffold with useful defensive guardrails, not a fitted
+Phase 1 is shipped as an experimental software/reference release, but is not
+shippable as a camera-native Portra 160 emulation. The supplied kit is a
+development scaffold with useful defensive guardrails, not a fitted
 Nikon Zf or Fujifilm X100V recipe. Real X100V RAW/JPEG captures and provisional
 SpektraFilm-vs-camera diagnostics now exist, including one held-out scene, but
 there is still no camera import acceptance, property-level readback, measured
