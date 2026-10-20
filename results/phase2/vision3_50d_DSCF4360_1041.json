@@ -1,0 +1,22 @@
+{
+  "stock": "vision3_50d",
+  "film": "kodak_vision3_50d",
+  "print": "kodak_2383",
+  "mode": "color",
+  "input_color_space": "ProPhoto RGB",
+  "input_encoding": "linear",
+  "output_color_space": "sRGB",
+  "output_encoding": "display-encoded",
+  "spektrafilm_package_version": "0.3.4",
+  "input_file": "results/hardware/x100v_c6/DSCF4360_linear_1041.npy",
+  "output_file": "results/phase2/vision3_50d_DSCF4360_1041.npy",
+  "input_shape": [
+    695,
+    1041,
+    3
+  ],
+  "source_commit_expected": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "source_commit_installed": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "source_commit_verified_at_runtime": true,
+  "warning": "Full mode has spatial/stochastic components; color mode is deterministic and suitable for color fitting. Scene-linear input is user-prepared and must be calibrated."
+}

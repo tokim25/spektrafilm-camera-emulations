@@ -11,6 +11,11 @@ camera validation is intentionally deferred and is not required for this
 release track. The project does not claim that its NP3 or X100V artifacts are
 camera-ready; those remain a separate future hardware-validation track.
 
+Phase 2 reference expansion has begun: the pinned pipeline now renders the
+Portra 400 target and all available prioritized film/print combinations. See
+[`PHASE2_STATUS.md`](PHASE2_STATUS.md). These are reference outputs, not
+camera recipes.
+
 **This is a reproducible calibration developer kit, not a camera-ready Portra 160 preset.**
 The user-defined Phase 1 release gate is stricter than a build passing tests:
 
