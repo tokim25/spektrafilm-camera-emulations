@@ -1,0 +1,29 @@
+{
+  "format": "z30-spektrafilm-reference-v1",
+  "stock": "ektar100",
+  "film": "kodak_ektar_100",
+  "print": "kodak_portra_endura",
+  "scan_film": false,
+  "mode": "lut_mode (color only)",
+  "input": "results/z30/scenes/pixls_garden_12bit.npy",
+  "input_sha256": "89b26932c881c0cae4cd844cc1fc1d68c33370e9b912d1888b8deb34641b77f0",
+  "output": "results/z30/references/pixls_garden_12bit/ektar100.npy",
+  "output_sha256": "a3e4907efef84439fa9ac7252e1f4137854b0ad5148d3037a3a5cbe6cf6c9181",
+  "output_color_space": "ProPhoto RGB, linear",
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "excluded_effects": [
+    "grain",
+    "halation",
+    "auto exposure",
+    "scanner corrections"
+  ]
+}

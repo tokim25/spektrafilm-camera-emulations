@@ -1,0 +1,29 @@
+{
+  "format": "z30-spektrafilm-reference-v1",
+  "stock": "vision3_250d",
+  "film": "kodak_vision3_250d",
+  "print": "kodak_2383",
+  "scan_film": false,
+  "mode": "lut_mode (color only)",
+  "input": "results/z30/scenes/pixls_garden_12bit.npy",
+  "input_sha256": "89b26932c881c0cae4cd844cc1fc1d68c33370e9b912d1888b8deb34641b77f0",
+  "output": "results/z30/references/pixls_garden_12bit/vision3_250d.npy",
+  "output_sha256": "dbcbc5bc2486c00753ffa8d0313d7185d6dfc661c1379718390cab725dcb99c3",
+  "output_color_space": "ProPhoto RGB, linear",
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "excluded_effects": [
+    "grain",
+    "halation",
+    "auto exposure",
+    "scanner corrections"
+  ]
+}

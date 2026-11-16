@@ -1,0 +1,44 @@
+{
+  "format": "spektrafilm-camera-linear-input-v1",
+  "source_path": "data/raw/z30/NIKON_Z30_14BIT.NEF",
+  "source_sha256": "a952c7baaed05c0f191fa3698262a1a894e54e3799dd34dc1ead0f63cf09e2ca",
+  "output_color_space": "ProPhoto RGB",
+  "output_encoding": "scene-linear, 16-bit LibRaw converted to 32-bit float",
+  "white_balance_mode": "camera",
+  "demosaic": "AHD",
+  "camera_whitebalance": [
+    2.0859375,
+    1.0,
+    1.310546875,
+    1.0
+  ],
+  "daylight_whitebalance": [
+    1.9857618808746338,
+    0.9346166253089905,
+    1.1526849269866943,
+    0.0
+  ],
+  "raw_black_levels": [
+    1008,
+    1008,
+    1008,
+    1008
+  ],
+  "raw_white_level": 16383,
+  "clipped_pixel_fraction": 0.0009354402973635806,
+  "rawpy_version": "0.26.1",
+  "spektrafilm_ready": true,
+  "true_camera_color_calibration_complete": false,
+  "raw_processing_level": "provisional_libraw_camera_matrix",
+  "calibration_status": "provisional_not_colorchecker_measured",
+  "warning": "A RAW source converted through LibRaw camera matrices, NOT a calibrated camera input profile. No automatic exposure or display gamma was applied. 16-bit conversion may clip highlights; inspect clipped_pixel_fraction. For final maximum-fidelity validation develop RAWs through a measured DCP/ICC profile to unclipped float TIFF/EXR and import as scene-linear.",
+  "out_path": "results/z30/scenes/pixls_garden_14bit.npy",
+  "out_sha256": "a38af98ae049656e59163ac7b82071c6f43ee9cee1c187ed9eb1955fe302dc7c",
+  "block_average_factor": 4,
+  "shape": [
+    932,
+    1400,
+    3
+  ],
+  "camera_model": "NIKON Z 30"
+}

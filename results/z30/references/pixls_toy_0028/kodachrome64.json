@@ -1,0 +1,29 @@
+{
+  "format": "z30-spektrafilm-reference-v1",
+  "stock": "kodachrome64",
+  "film": "kodak_kodachrome_64",
+  "print": "kodak_portra_endura",
+  "scan_film": true,
+  "mode": "lut_mode (color only)",
+  "input": "results/z30/scenes/pixls_toy_0028.npy",
+  "input_sha256": "51a6824932ca0b7aefd7a0e80519a5a35918b8b40eb30186f17b1fc259b6f47c",
+  "output": "results/z30/references/pixls_toy_0028/kodachrome64.npy",
+  "output_sha256": "e40251cbe38440b5bff9d45220ac2af071aeb65c95926ce83a0d116b47df077e",
+  "output_color_space": "ProPhoto RGB, linear",
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "excluded_effects": [
+    "grain",
+    "halation",
+    "auto exposure",
+    "scanner corrections"
+  ]
+}
