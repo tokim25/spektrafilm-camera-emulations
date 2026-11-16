@@ -1,0 +1,185 @@
+{
+  "format": "z30-look-gate-v1",
+  "stock": "ektar100",
+  "created": "2026-11-16T18:06:30+00:00",
+  "evidence_source": "simulated_standin",
+  "lightroom": {
+    "app": "SIMULATED STAND-IN",
+    "version": null
+  },
+  "thresholds_version": 1,
+  "pooled_heldout": {
+    "all": {
+      "n": 59052,
+      "mean": 0.7949225626888037,
+      "max": 14.768195883132492,
+      "p95": 1.9841898244695138,
+      "limits": {
+        "mean": 2.0,
+        "p95": 4.0,
+        "max": 6.0
+      },
+      "pass": false
+    },
+    "neutrals": {
+      "n": 29427,
+      "mean": 0.4792004042262053,
+      "max": 9.518918851747074,
+      "p95": 1.0174723539798676,
+      "limits": {
+        "mean": 1.0,
+        "p95": 2.0,
+        "max": 3.0
+      },
+      "pass": false
+    },
+    "skin": {
+      "n": 605,
+      "mean": 1.3084384826072302,
+      "max": 9.232909484595897,
+      "p95": 3.877665878947275,
+      "limits": {
+        "mean": 1.5,
+        "p95": 3.0,
+        "max": 4.0
+      },
+      "pass": false
+    },
+    "saturated": {
+      "n": 16215,
+      "mean": 1.2043884723791594,
+      "max": 8.664410947838764,
+      "p95": 2.27052109447388,
+      "limits": {
+        "mean": 3.0,
+        "p95": 6.0,
+        "max": 8.0
+      },
+      "pass": false
+    },
+    "pass": false
+  },
+  "scenes": [
+    {
+      "id": "pixls_toy_0029",
+      "blocks": 29314,
+      "look_gate": {
+        "all": {
+          "n": 29314,
+          "mean": 0.8505574697241902,
+          "max": 14.768195883132492,
+          "p95": 1.9805922052511222,
+          "limits": {
+            "mean": 2.0,
+            "p95": 4.0,
+            "max": 6.0
+          },
+          "pass": false
+        },
+        "neutrals": {
+          "n": 10659,
+          "mean": 0.5135685732675939,
+          "max": 9.182317472518067,
+          "p95": 1.1650890547050572,
+          "limits": {
+            "mean": 1.0,
+            "p95": 2.0,
+            "max": 3.0
+          },
+          "pass": false
+        },
+        "skin": {
+          "n": 418,
+          "mean": 1.4027605277555693,
+          "max": 9.232909484595897,
+          "p95": 3.943617381315368,
+          "limits": {
+            "mean": 1.5,
+            "p95": 3.0,
+            "max": 4.0
+          },
+          "pass": false
+        },
+        "saturated": {
+          "n": 9278,
+          "mean": 1.1514759796878895,
+          "max": 8.664410947838764,
+          "p95": 2.077887084122213,
+          "limits": {
+            "mean": 3.0,
+            "p95": 6.0,
+            "max": 8.0
+          },
+          "pass": false
+        },
+        "pass": false
+      }
+    },
+    {
+      "id": "pixls_toy_0028",
+      "blocks": 29738,
+      "look_gate": {
+        "all": {
+          "n": 29738,
+          "mean": 0.740080889918768,
+          "max": 11.713721877809832,
+          "p95": 1.9858492381298212,
+          "limits": {
+            "mean": 2.0,
+            "p95": 4.0,
+            "max": 6.0
+          },
+          "pass": false
+        },
+        "neutrals": {
+          "n": 18768,
+          "mean": 0.4596815256130254,
+          "max": 9.518918851747074,
+          "p95": 0.9277209075400951,
+          "limits": {
+            "mean": 1.0,
+            "p95": 2.0,
+            "max": 3.0
+          },
+          "pass": false
+        },
+        "skin": {
+          "n": 187,
+          "mean": 1.0976009699227076,
+          "max": 7.683688309121553,
+          "p95": 3.177668209645578,
+          "limits": {
+            "mean": 1.5,
+            "p95": 3.0,
+            "max": 4.0
+          },
+          "pass": false
+        },
+        "saturated": {
+          "n": 6937,
+          "mean": 1.2751571198045017,
+          "max": 8.451487487699072,
+          "p95": 2.4260441795005874,
+          "limits": {
+            "mean": 3.0,
+            "p95": 6.0,
+            "max": 8.0
+          },
+          "pass": false
+        },
+        "pass": false
+      }
+    }
+  ],
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "warning": "Simulated Lightroom stand-in. Not evidence for any gate."
+}

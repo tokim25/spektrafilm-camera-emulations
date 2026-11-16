@@ -1,0 +1,199 @@
+{
+  "evidence_source": "simulated_standin",
+  "train": [
+    "pixls_garden_14bit",
+    "pixls_garden_12bit"
+  ],
+  "heldout": [
+    "pixls_toy_0029",
+    "pixls_toy_0028"
+  ],
+  "stocks": {
+    "portra400": {
+      "all": {
+        "n": 52412,
+        "mean": 0.967,
+        "p95": 2.456,
+        "max": 13.096,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 22107,
+        "mean": 0.564,
+        "p95": 1.26,
+        "max": 8.649,
+        "pass": false
+      },
+      "skin": {
+        "n": 668,
+        "mean": 1.656,
+        "p95": 4.304,
+        "max": 8.889,
+        "pass": false
+      },
+      "saturated": {
+        "n": 13704,
+        "mean": 1.545,
+        "p95": 2.808,
+        "max": 7.818,
+        "pass": true
+      },
+      "pass": false
+    },
+    "ektar100": {
+      "all": {
+        "n": 59052,
+        "mean": 0.795,
+        "p95": 1.984,
+        "max": 14.768,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 29427,
+        "mean": 0.479,
+        "p95": 1.017,
+        "max": 9.519,
+        "pass": false
+      },
+      "skin": {
+        "n": 605,
+        "mean": 1.308,
+        "p95": 3.878,
+        "max": 9.233,
+        "pass": false
+      },
+      "saturated": {
+        "n": 16215,
+        "mean": 1.204,
+        "p95": 2.271,
+        "max": 8.664,
+        "pass": false
+      },
+      "pass": false
+    },
+    "gold200": {
+      "all": {
+        "n": 53162,
+        "mean": 0.852,
+        "p95": 2.06,
+        "max": 14.939,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 23367,
+        "mean": 0.528,
+        "p95": 1.169,
+        "max": 8.686,
+        "pass": false
+      },
+      "skin": {
+        "n": 748,
+        "mean": 1.577,
+        "p95": 4.177,
+        "max": 9.985,
+        "pass": false
+      },
+      "saturated": {
+        "n": 15494,
+        "mean": 1.228,
+        "p95": 2.272,
+        "max": 8.561,
+        "pass": false
+      },
+      "pass": false
+    },
+    "kodachrome64": {
+      "all": {
+        "n": 46712,
+        "mean": 1.404,
+        "p95": 4.069,
+        "max": 13.54,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 13362,
+        "mean": 0.456,
+        "p95": 1.076,
+        "max": 6.743,
+        "pass": false
+      },
+      "skin": {
+        "n": 349,
+        "mean": 1.33,
+        "p95": 4.02,
+        "max": 6.859,
+        "pass": false
+      },
+      "saturated": {
+        "n": 12191,
+        "mean": 2.875,
+        "p95": 4.623,
+        "max": 6.109,
+        "pass": true
+      },
+      "pass": false
+    },
+    "vision3_250d": {
+      "all": {
+        "n": 41054,
+        "mean": 1.541,
+        "p95": 4.46,
+        "max": 23.813,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 7421,
+        "mean": 0.649,
+        "p95": 1.439,
+        "max": 8.699,
+        "pass": false
+      },
+      "skin": {
+        "n": 1033,
+        "mean": 2.871,
+        "p95": 4.895,
+        "max": 7.615,
+        "pass": false
+      },
+      "saturated": {
+        "n": 12582,
+        "mean": 2.529,
+        "p95": 5.052,
+        "max": 8.814,
+        "pass": false
+      },
+      "pass": false
+    },
+    "vision3_500t": {
+      "all": {
+        "n": 40343,
+        "mean": 1.582,
+        "p95": 4.747,
+        "max": 12.425,
+        "pass": false
+      },
+      "neutrals": {
+        "n": 7409,
+        "mean": 0.63,
+        "p95": 1.426,
+        "max": 7.578,
+        "pass": false
+      },
+      "skin": {
+        "n": 1086,
+        "mean": 4.069,
+        "p95": 5.977,
+        "max": 7.823,
+        "pass": false
+      },
+      "saturated": {
+        "n": 10187,
+        "mean": 2.685,
+        "p95": 5.364,
+        "max": 8.523,
+        "pass": false
+      },
+      "pass": false
+    }
+  }
+}

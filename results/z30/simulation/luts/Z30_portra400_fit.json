@@ -1,0 +1,56 @@
+{
+  "format": "z30-lut-fit-v1",
+  "stock": "portra400",
+  "created": "2026-11-16T17:58:19+00:00",
+  "cube": "Z30_portra400_experimental.cube",
+  "lut_size": 33,
+  "training_scenes": [
+    {
+      "id": "pixls_garden_14bit",
+      "blocks": 37207,
+      "registration_score": 0.9141936445292977
+    },
+    {
+      "id": "pixls_garden_12bit",
+      "blocks": 33728,
+      "registration_score": 0.9146748356704677
+    }
+  ],
+  "training_blocks": 70935,
+  "inverse_model_selection": {
+    "method": "leave-one-scene-out",
+    "knots": 40,
+    "smooth": 0.0001,
+    "scores": {
+      "24/0.01": 2.205324149819806,
+      "40/0.01": 1.7112537607069007,
+      "40/0.001": 1.4568527968428235,
+      "40/0.0001": 1.4139475258176035
+    }
+  },
+  "lut_smoothness_selection": {
+    "method": "leave-one-scene-out",
+    "smoothness": 1.0,
+    "scores": {
+      "1": 1.0526949044976885,
+      "3": 1.0545067977533742,
+      "10": 1.0675452468659792
+    }
+  },
+  "training_fit_mean_de00": 1.0252359033498062,
+  "lightroom": {
+    "app": "SIMULATED STAND-IN",
+    "version": null
+  },
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "status": "experimental: not validated"
+}

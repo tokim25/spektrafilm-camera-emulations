@@ -1,0 +1,56 @@
+{
+  "format": "z30-lut-fit-v1",
+  "stock": "kodachrome64",
+  "created": "2026-11-16T18:21:06+00:00",
+  "cube": "Z30_kodachrome64_experimental.cube",
+  "lut_size": 33,
+  "training_scenes": [
+    {
+      "id": "pixls_garden_14bit",
+      "blocks": 18148,
+      "registration_score": 0.9141936445292977
+    },
+    {
+      "id": "pixls_garden_12bit",
+      "blocks": 15223,
+      "registration_score": 0.9146748356704677
+    }
+  ],
+  "training_blocks": 33371,
+  "inverse_model_selection": {
+    "method": "leave-one-scene-out",
+    "knots": 40,
+    "smooth": 0.0001,
+    "scores": {
+      "24/0.01": 2.1719758607649515,
+      "40/0.01": 1.5982079224644659,
+      "40/0.001": 1.3086243474002313,
+      "40/0.0001": 1.2511959866411684
+    }
+  },
+  "lut_smoothness_selection": {
+    "method": "leave-one-scene-out",
+    "smoothness": 1.0,
+    "scores": {
+      "1": 1.1461364252153994,
+      "3": 1.1645895091764191,
+      "10": 1.2269241548279095
+    }
+  },
+  "training_fit_mean_de00": 1.104330093324547,
+  "lightroom": {
+    "app": "SIMULATED STAND-IN",
+    "version": null
+  },
+  "spektrafilm": {
+    "installed": true,
+    "version": "0.3.4",
+    "expected_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "method": "editable checkout git HEAD",
+    "checkout": "/tmp/claude-0/-home-user-spektrafilm-camera-emulations/a75197c5-71c4-5c7e-9c7c-e5199c836c9d/scratchpad/spektrafilm-src",
+    "commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+    "tracked_changes": false,
+    "verified": true
+  },
+  "status": "experimental: not validated"
+}
