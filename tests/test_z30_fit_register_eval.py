@@ -77,22 +77,30 @@ def test_registration_recovers_known_warp():
     ref = texture(240, 360, 2)
     truth = Registration(scale=1.03, rotation_deg=0.4, shift_x=3.0, shift_y=-2.0, k1=0.02, k2=0.0,
                          ref_shape=(240, 360), export_shape=(240, 360))
-    # Build an export whose resampling onto the reference grid returns `ref`, by
-    # scattering reference pixels to their true export positions and interpolating.
-    from scipy.interpolate import griddata
-    from z30_lightroom.register import _coords
-    yy, xx = np.mgrid[0:240, 0:360].astype(float)
+    from z30_lightroom.register import _coords, render_export
+    export = render_export(ref, truth)
     ey, ex = _coords(truth, (240, 360))
-    export = np.zeros_like(ref)
-    pts = np.stack([ey.ravel(), ex.ravel()], 1)
-    for c in range(3):
-        export[..., c] = griddata(pts, ref[..., c].ravel(), (yy, xx), method="linear", fill_value=0.05)
     reg = register(ref, export, work_width=360)
     got_y, got_x = _coords(reg, (240, 360))
     err = np.hypot(got_y - ey, got_x - ex)[20:-20, 20:-20]
-    assert np.median(err) < 0.5
+    assert np.median(err) < 0.2
     warped, valid = warp_to_reference(export, reg, (240, 360))
     assert valid[20:-20, 20:-20].all()
+
+
+def test_coarse_registration_maps_shrunk_pixel_centres():
+    """At 4x shrink, ignoring pixel-centre offsets biased the result by about 1.5 px."""
+    from z30_lightroom.register import _coords, _optimize, render_export
+    ref = texture(480, 720, 4)
+    truth = Registration(scale=1.0, rotation_deg=0.0, shift_x=2.0, shift_y=-1.0, k1=0.0, k2=0.0,
+                         ref_shape=(480, 720), export_shape=(480, 720))
+    export = render_export(ref, truth)
+    base = Registration(scale=1.0, rotation_deg=0.0, shift_x=0.0, shift_y=0.0, k1=0.0, k2=0.0,
+                        ref_shape=(480, 720), export_shape=(480, 720))
+    p, _, unpack = _optimize(ref, export, 180, base, np.zeros(6), coarse_search=True)
+    ey, ex = _coords(truth, (480, 720))
+    gy, gx = _coords(unpack(p), (480, 720))
+    assert np.median(np.hypot(gy - ey, gx - ex)) < 0.5
 
 
 def test_gate_stats_rules():

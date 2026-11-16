@@ -20,7 +20,7 @@ import tifffile
 
 from z30_lightroom.colorimetry import prophoto_encode, prophoto_decode
 from z30_lightroom.cube import apply_lut
-from z30_lightroom.register import Registration, _coords
+from z30_lightroom.register import Registration, render_export
 from z30_lightroom.stocks import available_keys
 from z30_lightroom.workflow import fit_stock, evaluate_stock
 
@@ -39,17 +39,10 @@ def standin_render(scene_linear: np.ndarray) -> np.ndarray:
 
 def standin_geometry(img: np.ndarray) -> np.ndarray:
     """Resample as if Lightroom applied a barrel-correction warp and a 1% crop."""
-    from scipy import ndimage
     h, w = img.shape[:2]
     reg = Registration(scale=0.99, rotation_deg=0.0, shift_x=1.5, shift_y=-1.0, k1=-0.015, k2=0.0,
                        ref_shape=(h, w), export_shape=(h, w))
-    # export pixel (y, x) shows reference content at the inverse map; approximate by
-    # sampling the reference at the forward map of the export grid, adequate for small warps
-    ey, ex = _coords(reg, (h, w))
-    gy, gx = np.mgrid[0:h, 0:w].astype(float)
-    sy, sx = 2 * gy - ey, 2 * gx - ex
-    return np.stack([ndimage.map_coordinates(img[..., c], [sy, sx], order=1, mode="nearest")
-                     for c in range(3)], -1)
+    return render_export(img, reg)
 
 
 def write_tiff(path: Path, enc: np.ndarray) -> None:
