@@ -34,6 +34,21 @@ Hardware acceptance requires:
 3. Same-scene Portra reference and camera output measurements, plus held-out
    scene validation and published error reports.
 
+## Nikon Z30 Lightroom track
+
+The maintainer extended the scope to Lightroom profiles for the Nikon Z30
+(`src/z30_lightroom/`, `docs/z30/`). The same standards apply, plus:
+
+- Goal stocks and their availability live in `config/z30_goal_stocks.json`.
+  Stocks without a profile at the pinned commit fail closed. Moving the pin to
+  reach upstream `dev` profiles needs the maintainer's approval.
+- Acceptance thresholds are frozen in `config/z30_acceptance_thresholds.json`.
+  Never loosen them because a gate failed.
+- Results from the simulated Lightroom stand-in (`results/z30/simulation/`)
+  prove pipeline mechanics only and never count toward a gate.
+- Never write to a user's Lightroom folders or catalog from code. Installation
+  follows `docs/z30/INSTALL.md`.
+
 ## Release criteria
 
 The release remains experimental until all three hardware gates and the

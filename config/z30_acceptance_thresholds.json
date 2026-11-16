@@ -1,0 +1,36 @@
+{
+  "schema": "z30-lightroom-acceptance-thresholds-v1",
+  "version": 1,
+  "frozen_on": "2026-11-16",
+  "approved_by": "maintainer (thresholds proposed in session and accepted)",
+  "change_rule": "Changing a value needs a new version of this file, a written reason, and maintainer approval. A failed gate never justifies loosening a threshold.",
+  "metric": "CIEDE2000, kL = kC = kH = 1, CIELAB D50 for both gates",
+  "percentile_method": "numpy.percentile linear interpolation",
+  "min_samples_for_p95": 20,
+  "pass_rule": "Every limit must be met on held-out data only. Training numbers are reported but never count toward a pass.",
+  "gates": {
+    "calibration": {
+      "description": "Z30 DCP render vs ColorChecker SG published reference values, held-out capture.",
+      "all":       {"mean": 2.0, "p95": 4.0, "max": 6.0},
+      "neutrals":  {"mean": 1.0, "p95": 1.5, "max": 2.0},
+      "skin":      {"mean": 1.5, "p95": 2.5, "max": 3.5},
+      "saturated": {"mean": 3.0, "p95": 5.0, "max": 7.0}
+    },
+    "look": {
+      "description": "Lightroom render with the fitted stock profile vs SpektraFilm render of the same NEF, held-out scenes.",
+      "all":       {"mean": 2.0, "p95": 4.0, "max": 6.0},
+      "neutrals":  {"mean": 1.0, "p95": 2.0, "max": 3.0},
+      "skin":      {"mean": 1.5, "p95": 3.0, "max": 4.0},
+      "saturated": {"mean": 3.0, "p95": 6.0, "max": 8.0}
+    }
+  },
+  "scene_groups": {
+    "description": "Scenes have no chart, so look-gate groups are assigned from the SpektraFilm reference block's own CIELAB D50 value. Defined before any measurement.",
+    "unit": "16x16 RAW-pixel blocks after registration; blocks with internal luminance spread above max_block_spread_L or outside the L range are excluded as edges or clipped.",
+    "max_block_spread_L": 4.0,
+    "L_range": [5.0, 97.0],
+    "neutrals":  {"chroma_max": 6.0},
+    "skin":      {"hue_deg": [25.0, 65.0], "chroma": [10.0, 45.0], "L": [30.0, 85.0]},
+    "saturated": {"chroma_min": 45.0}
+  }
+}

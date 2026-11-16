@@ -1,0 +1,20 @@
+{
+  "schema": "z30-lightroom-goal-stocks-v1",
+  "source": "https://github.com/andreavolpato/spektrafilm",
+  "source_commit": "3bb2c2d2801ff68b92019cf1dbcbb133d60832bc",
+  "checked": "2026-11-16",
+  "rule": "Only profiles present at the pinned commit are rendered. Missing stocks fail closed; no nearby stock is substituted.",
+  "stocks": {
+    "portra160": {"name": "Kodak Portra 160", "status": "available", "film": "kodak_portra_160", "print": "kodak_portra_endura", "scan_film": false, "notes": "Negative printed on Portra Endura, matching the Zf/X100V project."},
+    "portra400": {"name": "Kodak Portra 400", "status": "available", "film": "kodak_portra_400", "print": "kodak_portra_endura", "scan_film": false, "notes": "Negative printed on Portra Endura."},
+    "ektar100": {"name": "Kodak Ektar 100", "status": "available", "film": "kodak_ektar_100", "print": "kodak_portra_endura", "scan_film": false, "notes": "Print pairing follows the existing film_catalog.json; review before release."},
+    "gold200": {"name": "Kodak Gold 200", "status": "available", "film": "kodak_gold_200", "print": "kodak_portra_endura", "scan_film": false, "notes": "Print pairing chosen to match the other still negatives; review before release."},
+    "kodachrome64": {"name": "Kodak Kodachrome 64", "status": "available", "film": "kodak_kodachrome_64", "print": "kodak_portra_endura", "scan_film": true, "notes": "Positive (slide) film rendered as a direct film scan. The print profile is required by the API but unused; output was verified identical with kodak_portra_endura and kodak_2383."},
+    "vision3_250d": {"name": "Kodak VISION3 250D", "status": "available", "film": "kodak_vision3_250d", "print": "kodak_2383", "scan_film": false, "notes": "Cine negative printed on Kodak 2383, as in film_catalog.json."},
+    "vision3_500t": {"name": "Kodak VISION3 500T", "status": "available", "film": "kodak_vision3_500t", "print": "kodak_2383", "scan_film": false, "notes": "Tungsten-balanced cine negative printed on Kodak 2383. Daylight scenes will render warm-to-blue as film would; this is not an error."},
+    "doublex5222": {"name": "Kodak Double-X 5222", "status": "missing_at_pin", "film": null, "print": null, "scan_film": false, "notes": "No profile at the pinned commit. Upstream branch 'dev' contains kodak_doublex.json and kodak_2302.json (B&W print); using them requires the maintainer to approve moving the pin."},
+    "trix400": {"name": "Kodak Tri-X 400", "status": "missing_at_pin", "film": null, "print": null, "scan_film": false, "notes": "No profile at the pinned commit. Upstream branch 'dev' contains kodak_trix.json; using it requires approving a pin change. The pinned revision has no black-and-white pipeline."},
+    "hp5plus400": {"name": "Ilford HP5 Plus 400", "status": "missing_upstream", "film": null, "print": null, "scan_film": false, "notes": "No Ilford profile exists upstream on the pinned commit or on the dev branch (checked 2026-11-16). Needs measured sensitometric data and a new profile."},
+    "superia400": {"name": "Fujifilm Superia 400", "status": "missing_upstream", "film": null, "print": null, "scan_film": false, "notes": "Not present upstream. fujifilm_xtra_400 is Superia X-TRA 400, a different emulsion, and must not be renamed or substituted without the maintainer's explicit decision."}
+  }
+}

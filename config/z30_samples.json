@@ -1,0 +1,20 @@
+{
+  "schema": "z30-sample-sources-v1",
+  "checked": "2026-11-16",
+  "public_domain": {
+    "license": "CC0 1.0 (raw.pixls.us dedicates all files to the public domain)",
+    "base_url": "https://raw.pixls.us/data/Nikon/Z%2030/",
+    "files": [
+      {"id": "pixls_garden_12bit", "name": "NIKON_Z30_12BIT.NEF", "sha256": "6157b2d6c307fda7b12cf1f5e398874bd198ef16f5e8929e20c57c9a57fef58b", "scene": "overcast December garden", "lens": "NIKKOR Z 40mm f/2", "iso": 100, "nef": "12-bit lossless"},
+      {"id": "pixls_garden_14bit", "name": "NIKON_Z30_14BIT.NEF", "sha256": "a952c7baaed05c0f191fa3698262a1a894e54e3799dd34dc1ead0f63cf09e2ca", "scene": "overcast December garden (same view, 14 s later)", "lens": "NIKKOR Z 40mm f/2", "iso": 100, "nef": "14-bit lossless"},
+      {"id": "pixls_toy_0028", "name": "_DSC0028.NEF", "sha256": "75249c11a3a845367c7a322a1c4e7076f33c785ec2518fc6594c34c185b41161", "scene": "indoor toy figure, daylight-balanced artificial light", "lens": "NIKKOR Z DX 16-50mm f/3.5-6.3 VR", "iso": 1800, "nef": "12-bit lossless"},
+      {"id": "pixls_toy_0029", "name": "_DSC0029.NEF", "sha256": "03d94c1f184c4236ea8f890ab0fe30e91b65965e8b09cebecc397fba081a607f", "scene": "indoor toy figure, same setup", "lens": "NIKKOR Z DX 16-50mm f/3.5-6.3 VR", "iso": 1250, "nef": "14-bit lossless"}
+    ]
+  },
+  "copyrighted_local_only": {
+    "license": "No license stated. Download for personal local use only; never commit or redistribute.",
+    "source": "https://www.photographyblog.com/reviews/nikon_z30_review",
+    "pattern": "https://img.photographyblog.com/reviews/nikon_z30/sample_images/nikon_z30_NN.nef (NN = 01..41)",
+    "notes": "Mostly ISO 100 at 1/100-1/640 s, f/6.3-f/11: bright daylight. Host is blocked in the cloud session; download on the Mac."
+  }
+}
