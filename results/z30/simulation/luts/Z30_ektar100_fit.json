@@ -1,19 +1,19 @@
 {
   "format": "z30-lut-fit-v1",
   "stock": "ektar100",
-  "created": "2026-11-16T18:06:25+00:00",
+  "created": "2026-11-16T19:11:28+00:00",
   "cube": "Z30_ektar100_experimental.cube",
   "lut_size": 33,
   "training_scenes": [
     {
       "id": "pixls_garden_14bit",
       "blocks": 43267,
-      "registration_score": 0.9141936445292977
+      "registration_score": 0.9387753146996115
     },
     {
       "id": "pixls_garden_12bit",
       "blocks": 39692,
-      "registration_score": 0.9146748356704677
+      "registration_score": 0.9382260521831635
     }
   ],
   "training_blocks": 82959,
@@ -22,22 +22,22 @@
     "knots": 40,
     "smooth": 0.0001,
     "scores": {
-      "24/0.01": 2.1261264570813587,
-      "40/0.01": 1.708441447631675,
-      "40/0.001": 1.472982961254797,
-      "40/0.0001": 1.4290011281823043
+      "24/0.01": 1.3908155973947678,
+      "40/0.01": 0.8303089093447065,
+      "40/0.001": 0.4768037490566878,
+      "40/0.0001": 0.39730941582526524
     }
   },
   "lut_smoothness_selection": {
     "method": "leave-one-scene-out",
     "smoothness": 1.0,
     "scores": {
-      "1": 0.9321315474848648,
-      "3": 0.932997647906239,
-      "10": 0.9422619055874071
+      "1": 0.43339702237904176,
+      "3": 0.440548002582252,
+      "10": 0.4557606628571525
     }
   },
-  "training_fit_mean_de00": 0.9066872216079394,
+  "training_fit_mean_de00": 0.3991925625108746,
   "lightroom": {
     "app": "SIMULATED STAND-IN",
     "version": null

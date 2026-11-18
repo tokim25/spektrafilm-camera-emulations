@@ -9,33 +9,64 @@
     "pixls_toy_0028"
   ],
   "stocks": {
+    "portra160": {
+      "all": {
+        "n": 53765,
+        "mean": 0.511,
+        "p95": 1.273,
+        "max": 3.513,
+        "pass": true
+      },
+      "neutrals": {
+        "n": 24433,
+        "mean": 0.396,
+        "p95": 0.744,
+        "max": 3.442,
+        "pass": false
+      },
+      "skin": {
+        "n": 1161,
+        "mean": 0.66,
+        "p95": 1.238,
+        "max": 2.456,
+        "pass": true
+      },
+      "saturated": {
+        "n": 12187,
+        "mean": 0.74,
+        "p95": 1.785,
+        "max": 2.677,
+        "pass": true
+      },
+      "pass": false
+    },
     "portra400": {
       "all": {
         "n": 52412,
-        "mean": 0.967,
-        "p95": 2.456,
-        "max": 13.096,
-        "pass": false
+        "mean": 0.6,
+        "p95": 1.587,
+        "max": 3.785,
+        "pass": true
       },
       "neutrals": {
         "n": 22107,
-        "mean": 0.564,
-        "p95": 1.26,
-        "max": 8.649,
+        "mean": 0.429,
+        "p95": 0.798,
+        "max": 3.776,
         "pass": false
       },
       "skin": {
         "n": 668,
-        "mean": 1.656,
-        "p95": 4.304,
-        "max": 8.889,
-        "pass": false
+        "mean": 0.688,
+        "p95": 1.447,
+        "max": 2.757,
+        "pass": true
       },
       "saturated": {
         "n": 13704,
-        "mean": 1.545,
-        "p95": 2.808,
-        "max": 7.818,
+        "mean": 0.904,
+        "p95": 2.225,
+        "max": 3.035,
         "pass": true
       },
       "pass": false
@@ -43,157 +74,157 @@
     "ektar100": {
       "all": {
         "n": 59052,
-        "mean": 0.795,
-        "p95": 1.984,
-        "max": 14.768,
-        "pass": false
+        "mean": 0.522,
+        "p95": 1.326,
+        "max": 4.327,
+        "pass": true
       },
       "neutrals": {
         "n": 29427,
-        "mean": 0.479,
-        "p95": 1.017,
-        "max": 9.519,
+        "mean": 0.373,
+        "p95": 0.786,
+        "max": 4.197,
         "pass": false
       },
       "skin": {
         "n": 605,
-        "mean": 1.308,
-        "p95": 3.878,
-        "max": 9.233,
-        "pass": false
+        "mean": 0.559,
+        "p95": 1.306,
+        "max": 1.882,
+        "pass": true
       },
       "saturated": {
         "n": 16215,
-        "mean": 1.204,
-        "p95": 2.271,
-        "max": 8.664,
-        "pass": false
+        "mean": 0.744,
+        "p95": 2.061,
+        "max": 2.922,
+        "pass": true
       },
       "pass": false
     },
     "gold200": {
       "all": {
         "n": 53162,
-        "mean": 0.852,
-        "p95": 2.06,
-        "max": 14.939,
-        "pass": false
+        "mean": 0.568,
+        "p95": 1.511,
+        "max": 4.931,
+        "pass": true
       },
       "neutrals": {
         "n": 23367,
-        "mean": 0.528,
-        "p95": 1.169,
-        "max": 8.686,
+        "mean": 0.401,
+        "p95": 0.704,
+        "max": 3.782,
         "pass": false
       },
       "skin": {
         "n": 748,
-        "mean": 1.577,
-        "p95": 4.177,
-        "max": 9.985,
-        "pass": false
+        "mean": 0.652,
+        "p95": 1.448,
+        "max": 2.518,
+        "pass": true
       },
       "saturated": {
         "n": 15494,
-        "mean": 1.228,
-        "p95": 2.272,
-        "max": 8.561,
-        "pass": false
+        "mean": 0.812,
+        "p95": 2.033,
+        "max": 3.299,
+        "pass": true
       },
       "pass": false
     },
     "kodachrome64": {
       "all": {
         "n": 46712,
-        "mean": 1.404,
-        "p95": 4.069,
-        "max": 13.54,
-        "pass": false
+        "mean": 0.531,
+        "p95": 1.526,
+        "max": 3.738,
+        "pass": true
       },
       "neutrals": {
         "n": 13362,
-        "mean": 0.456,
-        "p95": 1.076,
-        "max": 6.743,
-        "pass": false
+        "mean": 0.29,
+        "p95": 0.621,
+        "max": 2.594,
+        "pass": true
       },
       "skin": {
         "n": 349,
-        "mean": 1.33,
-        "p95": 4.02,
-        "max": 6.859,
-        "pass": false
+        "mean": 0.625,
+        "p95": 1.722,
+        "max": 2.689,
+        "pass": true
       },
       "saturated": {
         "n": 12191,
-        "mean": 2.875,
-        "p95": 4.623,
-        "max": 6.109,
+        "mean": 0.816,
+        "p95": 1.748,
+        "max": 3.307,
         "pass": true
       },
-      "pass": false
+      "pass": true
     },
     "vision3_250d": {
       "all": {
         "n": 41054,
-        "mean": 1.541,
-        "p95": 4.46,
-        "max": 23.813,
-        "pass": false
+        "mean": 0.727,
+        "p95": 1.73,
+        "max": 5.002,
+        "pass": true
       },
       "neutrals": {
         "n": 7421,
-        "mean": 0.649,
-        "p95": 1.439,
-        "max": 8.699,
-        "pass": false
+        "mean": 0.458,
+        "p95": 0.904,
+        "max": 2.99,
+        "pass": true
       },
       "skin": {
         "n": 1033,
-        "mean": 2.871,
-        "p95": 4.895,
-        "max": 7.615,
-        "pass": false
+        "mean": 1.041,
+        "p95": 1.74,
+        "max": 3.288,
+        "pass": true
       },
       "saturated": {
         "n": 12582,
-        "mean": 2.529,
-        "p95": 5.052,
-        "max": 8.814,
-        "pass": false
+        "mean": 1.066,
+        "p95": 2.133,
+        "max": 3.134,
+        "pass": true
       },
-      "pass": false
+      "pass": true
     },
     "vision3_500t": {
       "all": {
         "n": 40343,
-        "mean": 1.582,
-        "p95": 4.747,
-        "max": 12.425,
-        "pass": false
+        "mean": 0.782,
+        "p95": 1.659,
+        "max": 3.354,
+        "pass": true
       },
       "neutrals": {
         "n": 7409,
-        "mean": 0.63,
-        "p95": 1.426,
-        "max": 7.578,
-        "pass": false
+        "mean": 0.43,
+        "p95": 0.874,
+        "max": 2.458,
+        "pass": true
       },
       "skin": {
         "n": 1086,
-        "mean": 4.069,
-        "p95": 5.977,
-        "max": 7.823,
-        "pass": false
+        "mean": 0.986,
+        "p95": 1.472,
+        "max": 2.474,
+        "pass": true
       },
       "saturated": {
         "n": 10187,
-        "mean": 2.685,
-        "p95": 5.364,
-        "max": 8.523,
-        "pass": false
+        "mean": 1.318,
+        "p95": 2.437,
+        "max": 2.999,
+        "pass": true
       },
-      "pass": false
+      "pass": true
     }
   }
 }
